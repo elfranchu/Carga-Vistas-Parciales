@@ -1,0 +1,13 @@
+﻿@model  DynamicPartialLoad.Models.PageContent
+    @{
+        ViewBag.Title = "Contacto";
+    }
+
+    <h2>Pagina de Contacto con parcial</h2>
+    <div>
+        <span>Contenido Actualizado: @DateTime.Now.ToString()</span>
+        <br>
+        <p>Estos datos vienen del controlador, a través del modelo:</p>
+        <h2>Title: @Model.Title</h2>
+        <p>Description: @Model.Description</p>
+    </div>

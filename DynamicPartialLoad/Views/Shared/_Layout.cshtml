@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div>
+        <div class="mainlink">
+            <a href="/Home/Index">Inicio con Vistas</a>
+        </div>
+        <div class="mainlink">
+            <a href="/UsarParciales/Index">Inicio con Parciales</a>
+        </div>
+        <div class="mainlink">
+            <a href="/CargarParciales/Index">Cargar solo Parciales</a>
+        </div>
+        <div class="mainlink">
+            <a href="/AllInOne/Index">Mostrar Parciales</a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="main-content">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/site.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

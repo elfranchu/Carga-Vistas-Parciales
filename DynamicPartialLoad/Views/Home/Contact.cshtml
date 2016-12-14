@@ -1,0 +1,12 @@
+﻿@model  DynamicPartialLoad.Models.MyModel
+@{
+    ViewBag.Title = "Contacto";
+}
+@Html.Partial("_menu")
+<h2>Pagina de Contacto</h2>
+<h2>@Model.Header</h2>
+<div>
+    <p>Estos datos vienen del controlador, a través del modelo:</p>
+    <h2>Title: @Model.MainContent.Title</h2>
+    <p>Description: @Model.MainContent.Description</p>
+</div>

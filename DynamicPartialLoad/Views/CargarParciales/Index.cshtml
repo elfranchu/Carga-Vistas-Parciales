@@ -1,0 +1,25 @@
+﻿@using DynamicPartialLoad.Models;
+@model  DynamicPartialLoad.Models.MyModel
+@{
+    ViewBag.Title = "Index";
+}
+<span>Actualizado: @DateTime.Now.ToString()</span>
+@Html.Partial("_partialsmenu")
+<h2>@Model.Header</h2>
+<div id="contenidocentral">
+    <span>Contenido Central Actualizado: @DateTime.Now.ToString()</span>
+    <br>
+    @if (Model.ViewMode == EnumViewMode.Index)
+    {
+        @Html.Partial("_partialIndex", Model.MainContent)
+    }
+    else if (Model.ViewMode == EnumViewMode.Contact)
+    {
+        @Html.Partial("_partialContact", Model.MainContent)
+    }
+    else if (Model.ViewMode == EnumViewMode.Info)
+    {
+        @Html.Partial("__partialInfo", Model.MainContent)
+    }
+</div>
+<h2>@Model.Footer</h2>

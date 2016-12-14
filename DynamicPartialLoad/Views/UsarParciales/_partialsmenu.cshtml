@@ -1,0 +1,15 @@
+﻿<div class="nav-menu">
+    <span>Contenido Actualizado: @DateTime.Now.ToString()</span>
+    <br>
+    <div>
+        @Html.ActionLink("Inicio", "Index", "UsarParciales", new { id = "Index" }, null)
+    </div>
+
+    <div>
+        @Html.ActionLink("Información", "Index", "UsarParciales", new { id = "Info" }, null)
+    </div>
+    <div>
+        @Html.ActionLink("Contacto", "Index", "UsarParciales", new { id = "Contact" }, null)
+    </div>
+</div>
+<div style="clear:both;"></div>
