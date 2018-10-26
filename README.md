@@ -1,15 +1,15 @@
 # Carga-Vistas-Parciales
 ASP.NET MVC renderizado vista vs parciales vs visibilidad por javascript
-En este artículo, vamos a hacer una comparativa del “renderizado” o “pintado” de una vista en ASP.NET MVC de tres formas distintas.
+En este artÃ­culo, vamos a hacer una comparativa del â€œrenderizadoâ€ o â€œpintadoâ€ de una vista en ASP.NET MVC de tres formas distintas.
 
-La primera es la más básica petición de la vista al controlador.
-En una segunda parte veremos cómo dividir la vista en vistas parciales.
-Como tercer punto solicitaremos sólo la parte que necesitamos actualizar mediante el uso de vistas parciales.
-Y por último, en vez de refrescar la información, pasaremos a obtenerla en la primera petición del “html” y “jugaremos” con la visibilidad.
-Como ejemplo intentaremos mostrar tres páginas:
+La primera es la mÃ¡s bÃ¡sica peticiÃ³n de la vista al controlador.
+En una segunda parte veremos cÃ³mo dividir la vista en vistas parciales.
+Como tercer punto solicitaremos sÃ³lo la parte que necesitamos actualizar mediante el uso de vistas parciales.
+Y por Ãºltimo, en vez de refrescar la informaciÃ³n, pasaremos a obtenerla en la primera peticiÃ³n del â€œhtmlâ€ y â€œjugaremosâ€ con la visibilidad.
+Como ejemplo intentaremos mostrar tres pÃ¡ginas:
 
 Inicio
-Información
+InformaciÃ³n
 Contacto.
 
-http://programando.com.es/2016/12/14/asp-net-mvc-renderizado-vista-vs-parciales-vs-visibilidad-por-javascript/
+http://elblogdelprogramador.com/2016/12/14/asp-net-mvc-renderizado-vista-vs-parciales-vs-visibilidad-por-javascript/
